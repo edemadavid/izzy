@@ -50,7 +50,7 @@
 					Saying, over place of thing dry Male. Grass above subdue after creepeth given Signs our male hath seas morning grass bearing so dominion to second. Beast seasons which bring won't they're place called. Over <a href="#">this</a> and evening earth saying unto she'd that give from. Subdue had heaven void whose form dominion fourth. Sea male. Replenish made male, made gathered. Behold cattle be two thing. Saw fruit moveth, it winged. Doesn't us face living upon there doesn't divided You'll without had and so. Whales which, great under third saw male male.
 					</p>
 				</div>
-			</div>        
+			</div>
 		</section>
 		<section class="section section-overylay banner-content background-model-3 text-center section-overlay">
 			<div class="inner">
@@ -66,96 +66,6 @@
 				<p class="lead text-white">Why you should consider hire a professional producer and DJ?</p>
 			</div>
 		</section>
-		<!-- <section class="section section-dark text-left">
-			<div class="container">
-				<header>
-					<div class="col-md-12 padding-bottom">
-						<h1 class="text-white text-caps">
-						Clients
-						</h1>
-						<object type="image/svg+xml" width="15" height="15" data="assets/images/svg/shape-triangle.svg">
-						<img src="assets/images/svg/fallback-image.png" alt="…" />
-						</object>
-						<object type="image/svg+xml" width="15" height="15" data="assets/images/svg/shape-circle-lined.svg">
-						<img src="assets/images/svg/fallback-image.png" alt="…" />
-						</object>
-						<object type="image/svg+xml" width="15" height="15" data="assets/images/svg/shape-triangle-rotated.svg">
-						<img src="assets/images/svg/fallback-image.png" alt="…" />
-						</object>
-					</div>
-				</header>
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-4 small-screen-margin-top">
-							<div class="icon-block">
-								<i class="icon icon-block ion-ios-recording-outline"></i>
-								<span class="icon-block-title">
-								RECORDING
-								</span>
-								<p>
-								Third herb in hath fruitful waters waters Together i. Which. Had without beast rule forth after his first is gathering.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4 small-screen-margin-top">
-							<div class="icon-block">
-								<i class="icon icon-block ion-ios-analytics-outline"></i>
-								<span class="icon-block-title">
-								MIX
-								</span>
-								<p>
-								Third herb in hath fruitful waters waters Together i. Which. Had without beast rule forth after his first is gathering.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4 small-screen-margin-top">
-							<div class="icon-block">
-								<i class="icon icon-block ion-ios-timer-outline"></i>
-								<span class="icon-block-title">
-								MASTERING
-								</span>
-								<p>
-								Third herb in hath fruitful waters waters Together i. Which. Had without beast rule forth after his first is gathering.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4 margin-top">
-							<div class="icon-block">
-								<i class="icon icon-block ion-ios-toggle-outline"></i>
-								<span class="icon-block-title">
-								PRODUCING
-								</span>
-								<p>
-								Third herb in hath fruitful waters waters Together i. Which. Had without beast rule forth after his first is gathering.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4 margin-top">
-							<div class="icon-block">
-								<i class="icon icon-block ion-ios-photos-outline"></i>
-								<span class="icon-block-title">
-								CD COVER
-								</span>
-								<p>
-								Third herb in hath fruitful waters waters Together i. Which. Had without beast rule forth after his first is gathering.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4 margin-top">
-							<div class="icon-block">
-								<i class="icon icon-block ion-ios-barcode-outline"></i>
-								<span class="icon-block-title">
-								QUALITY
-								</span>
-								<p>
-								Third herb in hath fruitful waters waters Together i. Which. Had without beast rule forth after his first is gathering.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>        
-		</section> -->
 		<section class="section section-dark text-left">
 			<div class="container">
 				<header>
@@ -243,6 +153,6 @@
 						</blockquote>
 					</div>
 				</div>
-			</div>        
+			</div>
 		</section>
 		<?php require('./headers/footer.php') ?>

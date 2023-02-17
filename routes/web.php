@@ -11,8 +11,6 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\SermonController;
 
 
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,21 +23,18 @@ use App\Http\Controllers\SermonController;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('page.home');
+Route::get('/about', [PageController::class, 'about'])->name('page.about');
+
 Route::get('/sermons', [PageController::class, 'sermons'])->name('page.sermons');
 Route::get('/books', [PageController::class, 'books'])->name('page.books');
-Route::get('/about', [PageController::class, 'about'])->name('page.about');
 Route::get('/contact-us', [PageController::class, 'contact'])->name('page.contact');
 
 
-
+//Auth
 Route::get('/register', [AuthController::class, 'registerpage']);
-
 Route::get('/login', [AuthController::class, 'loginpage']);
-
 Route::post('/register', [AuthController::class, 'register'])->name('register');
-
 Route::post('/login', [AuthController::class, 'login'])->name('login');
-
 Route::get('/logout',[AuthController::class, 'logout'])->name('logout');
 
 
