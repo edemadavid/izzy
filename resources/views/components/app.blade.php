@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>TARDO // Producer - Sound Engineer - DJ</title>
+    <title>IZZY // Producer - Sound Engineer - DJ</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7CInconsolata:400,700" rel="stylesheet" type="text/css" />
@@ -24,7 +24,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="" href="index.php" style="display: inline-block; width: 200px !important;">
+                    <a class="" href="{{ route ('page.home')}}" style="display: inline-block; width: 200px !important;">
                         <img src="{{ asset ('izzy/Whitelogo-nobg.png')}}" alt="" height="87" width="270" />
                     </a>
                 </div>
@@ -38,14 +38,12 @@
 
                             </li>
                             <li><a href="{{ route ('page.about')}}">Izzy</a></li>
-                            <li class="mobile-dropdown">
-                                <a href="top-hits.php" class="mobile-dropdown-toggle expander" aria-expanded="false">Top hits</a>
-                            </li>
 
-                            <li class="mobile-dropdown">
-                                <a href="gallery.php" class="mobile-dropdown-toggle expander" aria-expanded="false">Gallery</a>
-                            </li>
-                            <li><a href="contact.php">Contact Me</a></li>
+                            <li><a href="{{ route ('page.tophits')}}" >Top hits</a></li>
+
+                            <li><a href="{{ route ('page.gallery')}}">Gallery</a></li>
+
+                            <li><a href="{{ route ('page.contact')}}">Contact Me</a></li>
                         </ul>
                         <p class="mobile-sidebar-msg text-white">
                             Izzy <span class="text-primary">//&nbsp;</span><span class="text-semi-white text-caps">All rights reserved © 2023
@@ -59,20 +57,11 @@
                 <!-- Desktop menu -->
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="{{ route ('page.home')}}" class="dropdown-toggle" aria-expanded="false">Home </a>
-
-                        </li>
+                        <li><a href="{{ route ('page.home')}}">Home</a></li>
                         <li><a href="{{ route ('page.about')}}">Izzy</a></li>
-                        <li class="dropdown">
-                            <a href="top-hits.php" class="dropdown-toggle" aria-expanded="false">Top hits</a>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="gallery.php" class="dropdown-toggle" aria-expanded="false">Gallery</a>
-                        </li>
-
-                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="{{ route ('page.tophits')}}">Top hits</a></li>
+                        <li><a href="{{ route ('page.gallery')}}" >Gallery</a></li>
+                        <li><a href="{{ route ('page.contact')}}">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right"></ul>
                 </div>

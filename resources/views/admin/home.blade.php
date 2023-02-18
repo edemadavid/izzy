@@ -31,6 +31,16 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card widget_2 big_icon zmdi-gps-dot">
+                            <div class="body">
+                                <h6>Events</h6>
+                                <h2>{{$events}}</h2>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card widget_2 big_icon zmdi-library">
                             <div class="body">
                                 <h6>Sermons</h6>

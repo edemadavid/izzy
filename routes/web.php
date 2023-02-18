@@ -8,6 +8,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\SermonController;
 
 
@@ -24,10 +25,13 @@ use App\Http\Controllers\SermonController;
 
 Route::get('/', [PageController::class, 'index'])->name('page.home');
 Route::get('/about', [PageController::class, 'about'])->name('page.about');
+Route::get('/top-hits',[PageController::class, 'tophits'])->name('page.tophits');
+Route::get('/gallery', [PageController::class, 'gallery'])->name('page.gallery');
+Route::get('/contact-us', [PageController::class, 'contact'])->name('page.contact');
+
 
 Route::get('/sermons', [PageController::class, 'sermons'])->name('page.sermons');
 Route::get('/books', [PageController::class, 'books'])->name('page.books');
-Route::get('/contact-us', [PageController::class, 'contact'])->name('page.contact');
 
 
 //Auth
@@ -63,21 +67,37 @@ Route::middleware(['isLoggedin'])->group (function() {
     Route::get('/category/delete/{id}', [CategoryController::class, 'destroy'])
     ->name('deletecategory');
 
+    /*
+    ----------------------------------------------------------------
+    | Event Routes
+    ----------------------------------------------------------------
+    */
+    Route::get('/event', [EventController::class, 'index'])
+    ->name('event');
+
+    Route::get('/event/add', [EventController::class, 'create'])
+    ->name('event.add');
+
+    Route::post('/event/store', [EventController::class, 'store'])
+    ->name('event.store');
+
+    Route::get('/event/edit/{id}', [EventController::class, 'edit'])
+    ->name('event.edit');
+
+    Route::post('/event/store/{id}', [EventController::class, 'update'])
+    ->name('event.update');
+
+    Route::get('/event/delete/{id}', [EventController::class, 'destroy'])
+    ->name('event.delete');
 
 
 
-//     Route::get('/category/edit/{id}', [CategoryController::class, 'edit'])
-//     ->name('editcategory');
 
-//     Route::post('/category/store', [CategoryController::class, 'update'])
-//     ->name('storecategory');
-
-
-//     /*
-//     ----------------------------------------------------------------
-//     | Book Routes
-//     ----------------------------------------------------------------
-//     */
+    /*
+    ----------------------------------------------------------------
+    | Book Routes
+    ----------------------------------------------------------------
+    */
     Route::get('/book', [BookController::class, 'index'])
     ->name('book');
 
@@ -98,11 +118,11 @@ Route::middleware(['isLoggedin'])->group (function() {
 
 
 
-//     /*
-//     ----------------------------------------------------------------
-//     | Sermon Routes
-//     ----------------------------------------------------------------
-//     */
+    /*
+    ----------------------------------------------------------------
+    | Sermon Routes
+    ----------------------------------------------------------------
+    */
     Route::get('/sermon', [SermonController::class, 'index'])
     ->name('sermon');
 

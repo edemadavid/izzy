@@ -52,7 +52,14 @@
                         </div>
                     </li>
                     <li class="active open"><a href="{{ route('dashboard')}}"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-gps-dot"></i><span>Events</span></a>
+                        <ul class="ml-menu">
+                            <li><a href="{{ route ('event.add') }}">Add Event</a></li>
+                            <li><a href="{{ route ('event') }}">Event List</a></li>
 
+                        </ul>
+                    </li>
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="zmdi zmdi-dns"></i><span>Categories</span>
