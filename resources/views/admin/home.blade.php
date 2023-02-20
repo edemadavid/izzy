@@ -41,20 +41,21 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card widget_2 big_icon zmdi-library">
+                        <div class="card widget_2 big_icon zmdi-collection-music">
                             <div class="body">
-                                <h6>Sermons</h6>
-                                <h2>{{$sermons}}</h2>
+                                <h6>Audio Mix</h6>
+                                <h2>{{$audio}}</h2>
 
 
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card widget_2 big_icon zmdi-layers">
+                        <div class="card widget_2 big_icon zmdi-library">
                             <div class="body">
-                                <h6>Books</h6>
-                                <h2>{{$books}} </h2>
+                                <h6>Gallery</h6>
+                                <h2>{{$sermons}}</h2>
+
 
                             </div>
                         </div>

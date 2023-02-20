@@ -17,7 +17,7 @@
                     <h2>Dashboard</h2>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{route('dashboard')}}"><i class="zmdi zmdi-home"></i>Dashboard</a></li>
-                        <li class="breadcrumb-item">Add Book</li>
+                        <li class="breadcrumb-item">Edit Event</li>
 
                     </ul>
                     <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
@@ -27,45 +27,38 @@
         </div>
         <div class="container-fluid">
 
-            <form action="{{route('storebook')}}" method="POST" enctype="multipart/form-data">
+            <form action="{{route('event.update', $event->id)}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="body">
                                 <div class="form-group mb-4">
-                                    <label for="category_name">Book Title</label>
-                                    <input type="text" class="form-control" name="title" placeholder="Enter Sermon Name" />
-                                </div>
-
-                                <div class="form-group mb-4">
-                                    <label for="category_name"> Category</label>
-
-                                    <select name="category_id" class="form-control selectpicker show-tick" data-live-search="true">
-                                        <option>Select Category --</option>
-                                        @foreach ($categories as $category)
-                                        <option value="{{ $category->id}}">{{ $category->category_name}}</option>
-                                        @endforeach
-
-                                    </select>
+                                    <label for="category_name">Event Title</label>
+                                    <input type="text" class="form-control" name="title" placeholder="Enter Title Name" value="{{$event->title}}" />
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="category_desc">Book Description</label>
-                                    <textarea class="form-control" name="book_desc" id="description"></textarea>
+                                    <label for="category_desc">Event Description</label>
+                                    <textarea class="form-control" name="description" id="description">{{$event->description}}</textarea>
                                 </div>
 
                                 <div class="form-group mb-4">
-                                    <label for="author">Author</label>
-                                    <input type="text" class="form-control" name="author" placeholder="Enter Sermon Name" />
+                                    <label for="author">Location</label>
+                                    <input type="text" class="form-control" name="location" placeholder="Enter Event Location" value="{{$event->location}}" />
                                 </div>
 
                                 <div class="form-group mb-4">
-                                    <label for="category_name">File</label>
-                                    <input type="file" class="form-control" name="book_file" />
+                                    <label for="author">Venue</label>
+                                    <input type="text" class="form-control" name="venue" placeholder="Enter Event Venue" value="{{$event->venue}}" />
                                 </div>
 
-                                <button type="submit" onclick="handleFormSubmit(event)" class="btn btn-info waves-effect m-t-20">Add</button>
+                                <div class="form-group mb-4">
+                                    <label for="author">Date</label>
+                                    <input type="datetime" class="form-control" name="date" placeholder="Enter Event Date" value="{{$event->date}}"/>
+                                </div>
+
+                                <button type="submit" onclick="handleFormSubmit(event)" class="btn btn-info waves-effect m-t-20">Edit</button>
 
                             </div>
 

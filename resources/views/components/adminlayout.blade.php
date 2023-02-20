@@ -46,7 +46,7 @@
                         <div class="user-info">
 
                             <div class="detail mx-1">
-                                <h4>Hi, **name</h4>
+                                <h4>Hi, Admin</h4>
                                 <a href="{{route('logout')}}" class="btn"> Logout </a>
                             </div>
                         </div>
@@ -57,6 +57,14 @@
                         <ul class="ml-menu">
                             <li><a href="{{ route ('event.add') }}">Add Event</a></li>
                             <li><a href="{{ route ('event') }}">Event List</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-collection-music"></i><span>Audio Mix</span></a>
+                        <ul class="ml-menu">
+                            <li><a href="{{ route ('audioMix.add') }}">Add Audio Mix</a></li>
+                            <li><a href="{{ route ('audioMix') }}">Audio List</a></li>
 
                         </ul>
                     </li>

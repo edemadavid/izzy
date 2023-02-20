@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AudioMix;
 use App\Models\Book;
 use App\Models\Category;
 use App\Models\Event;
@@ -20,6 +21,8 @@ class AdminController extends Controller
 
         $books = Book::all()->count();
 
-        return(view('admin.home', compact('categories', 'events', 'sermons', 'books')));
+        $audio = AudioMix::all()->count();
+
+        return(view('admin.home', compact('categories', 'events', 'sermons', 'books', 'audio')));
     }
 }

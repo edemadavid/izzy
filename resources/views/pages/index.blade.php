@@ -69,33 +69,36 @@
                 </object>
             </header>
         </div>
+        @forelse ($events as $event)
         <div class="col-md-12 event-wrap margin-bottom os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s">
             <div class="col-md-12 text-right">
-                <h1 class="event-title">BANG OUT PRESENTATION</h1>
+                <h1 class="event-title">{{$event->title}}</h1>
             </div>
             <div class="col-md-12 event-icons text-left vertical-middle">
                 <i class="icon ion-ios-calendar-outline"></i>
-                <h3>12 OCTOBER</h3>
+                <h3>{{$event->date}}</h3>
             </div>
             <div class="col-md-12 event-icons text-left vertical-middle">
                 <i class="icon ion-ios-location"></i>
                 <h3>
-                    SYDNEY, AUSTRALIA
-                    <small><span class="text-primary">@&nbsp;</span>Rio Costa Palace
-                        Club</small>
+                    {{$event->location}}
+                    <small>
+                        <span class="text-primary">@&nbsp;</span>
+                        {{$event->venue}}
+                    </small>
                 </h3>
             </div>
             <div class="col-md-12 event-info">
                 <p>
-                    Don't land dominion thing face. Whales you after. Divide seas unto
-                    days herb. Wherein winged be unto. Our a bring herb. Heaven
-                    together. A, blessed upon greater seed. Set Don't. Behold fish
-                    make said divided moved air in unto.
+                    {{$event->description}}
                 </p>
-                <button class="btn btn-danger">BOOK TICKETS</button>
+
             </div>
         </div>
-        <div class="col-md-12 event-wrap margin-bottom os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s">
+        @empty
+
+        @endforelse
+        <!-- <div class="col-md-12 event-wrap margin-bottom os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s">
             <div class="col-md-12 text-right">
                 <h1 class="event-title">
                     TR<span class="text-primary">Δ</span>P TOUR
@@ -149,7 +152,7 @@
                 </p>
                 <button class="btn btn-danger">BOOK TICKETS</button>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 <section class="section section-overlay banner-content background-model-3 text-center">

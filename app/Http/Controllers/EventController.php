@@ -15,7 +15,9 @@ class EventController extends Controller
      */
     public function index()
     {
-        //
+        $events = Event::all();
+
+        return view('admin.events', compact('events'));
     }
 
     /**
@@ -25,7 +27,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        return view('admin.addevent');
+        return view('admin.eventAdd');
     }
 
     /**
@@ -63,7 +65,9 @@ class EventController extends Controller
         $events->description = $validated['description'];
         $events->date = $validated['date'];
 
-        $events -> save();
+        // dd($events);
+
+        $events-> save();
 
         return redirect()->action(
             [EventController::class, 'index']
@@ -90,9 +94,9 @@ class EventController extends Controller
      */
     public function edit(Event $event, $id)
     {
-        $events = Event::find($id)->get();
+        $event = Event::find($id);
 
-        return view('admin.editEvent', Compact('events'));
+        return view('admin.eventEdit', Compact('event'));
     }
 
     /**
@@ -118,7 +122,7 @@ class EventController extends Controller
 
         // checks id validator fails and returns to form ...
         if ($validator->fails()) {
-            return redirect('sermon/edit/'.$id)
+            return redirect('event/edit/'.$id)
                         ->withErrors($validator)
                         ->withInput();
         }
@@ -132,10 +136,7 @@ class EventController extends Controller
         $events->description = $validated['description'];
         $events->date = $validated['date'];
 
-        $events -> save();
-
-        $events->save();
-
+        $events -> update();
 
         return redirect()->action(
             [EventController::class, 'index']

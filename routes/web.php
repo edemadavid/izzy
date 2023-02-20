@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AudioMixController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\EventController;
@@ -90,6 +91,29 @@ Route::middleware(['isLoggedin'])->group (function() {
     Route::get('/event/delete/{id}', [EventController::class, 'destroy'])
     ->name('event.delete');
 
+
+    /*
+    ----------------------------------------------------------------
+    | Audio Routes
+    ----------------------------------------------------------------
+    */
+    Route::get('/audio', [AudioMixController::class, 'index'])
+    ->name('audioMix');
+
+    Route::get('/audio/add', [AudioMixController::class, 'create'])
+    ->name('audioMix.add');
+
+    Route::post('/audio/store', [AudioMixController::class, 'store'])
+    ->name('audioMix.store');
+
+    Route::get('/audio/edit/{id}', [AudioMixController::class, 'edit'])
+    ->name('audioMix.edit');
+
+    Route::post('/audio/store/{id}', [AudioMixController::class, 'update'])
+    ->name('audioMix.update');
+
+    Route::get('/audio/delete/{id}', [AudioMixController::class, 'destroy'])
+    ->name('audioMix.delete');
 
 
 
