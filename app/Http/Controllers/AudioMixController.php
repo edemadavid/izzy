@@ -65,16 +65,16 @@ class AudioMixController extends Controller
         if($request->file('audio_file')){
             $file= $request->file('audio_file');
 
-            $filename= date('YmdHi')."_".$audioMix->title.".".$request->audio_file->extension();
+            $filename= date('YmdHi')."_Audio".".".$request->audio_file->extension();
 
             $file-> move(public_path('Audio'), $filename);
 
-            $data['image']= $filename;
+            // $data['image']= $filename;
         } else {$filename = null;}
 
-        $audioMix->file = $filename;
+        $audioMix->audio_file = $filename;
 
-        // dd($sermon);
+        // dd($audioMix);
 
         $audioMix -> save();
 

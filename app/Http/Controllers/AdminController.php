@@ -17,12 +17,8 @@ class AdminController extends Controller
 
         $events = Event::all()->count();
 
-        $sermons = Sermon::all()->count();
-
-        $books = Book::all()->count();
-
         $audio = AudioMix::all()->count();
 
-        return(view('admin.home', compact('categories', 'events', 'sermons', 'books', 'audio')));
+        return(view('admin.home', compact('categories', 'events', 'audio')));
     }
 }

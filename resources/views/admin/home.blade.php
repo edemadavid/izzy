@@ -54,8 +54,7 @@
                         <div class="card widget_2 big_icon zmdi-library">
                             <div class="body">
                                 <h6>Gallery</h6>
-                                <h2>{{$sermons}}</h2>
-
+                                <h2>##</h2>
 
                             </div>
                         </div>
