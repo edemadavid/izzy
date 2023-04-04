@@ -39,7 +39,7 @@
                             </li>
                             <li><a href="{{ route ('page.about')}}">Izzy</a></li>
 
-                            <li><a href="{{ route ('page.tophits')}}" >Top hits</a></li>
+                            <li><a href="{{ route ('page.tophits')}}">Top hits</a></li>
 
                             <li><a href="{{ route ('page.gallery')}}">Gallery</a></li>
 
@@ -57,11 +57,19 @@
                 <!-- Desktop menu -->
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
+                        <a class="" href="{{ route ('page.home')}}" style="display: inline-block; width: 200px !important;">
+                            <img src="{{ asset ('izzy/Whitelogo-nobg.png')}}" alt="" height="87" width="270" />
+                        </a>
                         <li><a href="{{ route ('page.home')}}">Home</a></li>
                         <li><a href="{{ route ('page.about')}}">Izzy</a></li>
                         <li><a href="{{ route ('page.tophits')}}">Top hits</a></li>
-                        <li><a href="{{ route ('page.gallery')}}" >Gallery</a></li>
+                        <li><a href="{{ route ('page.gallery')}}">Gallery</a></li>
                         <li><a href="{{ route ('page.contact')}}">Contact</a></li>
+                        <li>
+                            <a style="float:none; " target="_blank" href="https://booking.setmore.com/scheduleappointment/bb99a712-e29b-4b8c-8071-7722a0520449">
+                                <img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg" alt="Book an appointment with Dj Izzy using Setmore" />
+                            </a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right"></ul>
                 </div>

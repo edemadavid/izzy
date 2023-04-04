@@ -44,12 +44,15 @@
         </header>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-
+                @if($latestHit)
                 <p class="text-white" >{{$latestHit->title}}</p>
                 <audio controls>
                     <source src="{{asset('Audio/'.$latestHit->audio_file)}}">
                     Your browser does not support the audio element.
                 </audio>
+                @else
+                <p class="text-white" >No Hits Uploaded Yet.</p>
+                @endif
             </div>
         </div>
     </div>
