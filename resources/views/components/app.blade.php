@@ -13,12 +13,34 @@
 </head>
 
 <body>
+    <style>
+        @media screen and (min-width: 1440px) {
+            .book-now {
+                bottom: 10px;
+                left: 450px;
+            }
+        }
+
+        @media screen and (max-width: 1430px) and (min-width: 768px) {
+            .book-now {
+                bottom: 10px;
+                left: 300px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .book-now {
+                bottom: 10px;
+                left: 150px;
+            }
+        }
+    </style>
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="row">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header d-flex">
-                     <!-- <a class="d-none d-md-flex" href="{{ route ('page.home')}}" style="display: inline-block; width: 200px !important;">
+                    <!-- <a class="d-none d-md-flex" href="{{ route ('page.home')}}" style="display: inline-block; width: 200px !important;">
                         <img src="{{ asset ('izzy/Whitelogo-nobg.png')}}" alt="" height="87" width="270" />
                     </a> -->
                     <a class="navbar-toggle toggle-menu menu-right pull-right push-body collapsed" data-toggle="colapse" data-target="#mobile-sidebar">
@@ -27,7 +49,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    
+
                 </div>
                 <!-- Mobile Menu -->
                 <div id="mobile-sidebar " class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
@@ -45,6 +67,12 @@
                             <li><a href="{{ route ('page.gallery')}}">Gallery</a></li>
 
                             <li><a href="{{ route ('page.contact')}}">Contact Me</a></li>
+
+                            <li>
+                                <a target="_blank" href="https://booking.setmore.com/scheduleappointment/bb99a712-e29b-4b8c-8071-7722a0520449">
+                                    <img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg" alt="Book an appointment with Dj Izzy using Setmore" />
+                                </a>
+                            </li>
                         </ul>
                         <p class="mobile-sidebar-msg text-white">
                             Izzy <span class="text-primary">//&nbsp;</span><span class="text-semi-white text-caps">All rights reserved © 2023
@@ -57,17 +85,14 @@
 
                 <!-- Desktop menu -->
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <a class="" href="{{ route ('page.home')}}" style="display: inline-block; width: 200px !important;">
-                            <img src="{{ asset ('izzy/Whitelogo-nobg.png')}}" alt="" height="87" width="270" />
-                        </a>
+                    <ul class="nav navbar-nav d-flex align-item-center">
                         <li><a href="{{ route ('page.home')}}">Home</a></li>
                         <li><a href="{{ route ('page.about')}}">Izzy</a></li>
                         <li><a href="{{ route ('page.tophits')}}">Top hits</a></li>
                         <li><a href="{{ route ('page.gallery')}}">Gallery</a></li>
                         <li><a href="{{ route ('page.contact')}}">Contact</a></li>
-                        <li>
-                            <a style="float:none; " target="_blank" href="https://booking.setmore.com/scheduleappointment/bb99a712-e29b-4b8c-8071-7722a0520449">
+                        <li class="mb-2 book-now">
+                            <a class="" target="_blank" href="https://booking.setmore.com/scheduleappointment/bb99a712-e29b-4b8c-8071-7722a0520449">
                                 <img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg" alt="Book an appointment with Dj Izzy using Setmore" />
                             </a>
                         </li>

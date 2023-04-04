@@ -31,9 +31,6 @@ Route::get('/gallery', [PageController::class, 'gallery'])->name('page.gallery')
 Route::get('/contact-us', [PageController::class, 'contact'])->name('page.contact');
 
 
-Route::get('/sermons', [PageController::class, 'sermons'])->name('page.sermons');
-Route::get('/books', [PageController::class, 'books'])->name('page.books');
-
 
 //Auth
 Route::get('/register', [AuthController::class, 'registerpage']);
