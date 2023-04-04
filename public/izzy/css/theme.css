@@ -1,16 +1,16 @@
 @charset "UTF-8";
-/* 
-======================================================================== 
+/*
+========================================================================
 
 TARDO: theme.css
 Main Theme CSS file
 
-@Author: Andrew ch 
+@Author: Andrew ch
 @URL: http://andrewch.eu
- 
+
 This is the file you need to edit to change the look of the theme.
 
-======================================================================== 
+========================================================================
 
 - // TABLE OF CONTENTS // -
 
@@ -35,7 +35,7 @@ This is the file you need to edit to change the look of the theme.
 19. Swiper Slider
 20. Pace Theme
 
-======================================================================== 
+========================================================================
 */
 /* GENERAL TYPOGRAPHY RULES */
 /* ===================================== */
@@ -1374,6 +1374,8 @@ ul.symbol-divider li {
   left: 0;
   top: 0;
   background: #171720;
+
+   background-image: url("../images/djIzzy.jpg");
   opacity: 0.85;
   z-index: 0; }
 
@@ -1457,7 +1459,7 @@ ul.symbol-divider li {
   width: 100%;
   background-attachment: scroll; }
 
-/* 
+/*
 .splash-header:before{
   content: ' ';
   position: absolute;
@@ -3979,7 +3981,7 @@ ul.symbol-divider li {
 .cd-info p {
   margin-top: 15px; }
 
-/* 
+/*
 .cd-info span.subtitle:after {
   content: "//////////////////////////////////////////";
   font-size: 10px;
@@ -7080,15 +7082,15 @@ Copyright (c) 2015 Daniel Eden
 /**
 * Swiper 3.0.6
 * Most modern mobile touch slider and framework with hardware accelerated transitions
-* 
+*
 * http://www.idangero.us/swiper/
-* 
+*
 * Copyright 2015, Vladimir Kharlampidi
 * The iDangero.us
 * http://www.idangero.us/
-* 
+*
 * Licensed under MIT
-* 
+*
 * Released on: March 27, 2015
 */
 .swiper-container {

@@ -17,16 +17,17 @@
         <div class="container">
             <div class="row">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
+                <div class="navbar-header d-flex">
+                     <!-- <a class="d-none d-md-flex" href="{{ route ('page.home')}}" style="display: inline-block; width: 200px !important;">
+                        <img src="{{ asset ('izzy/Whitelogo-nobg.png')}}" alt="" height="87" width="270" />
+                    </a> -->
                     <a class="navbar-toggle toggle-menu menu-right pull-right push-body collapsed" data-toggle="colapse" data-target="#mobile-sidebar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="" href="{{ route ('page.home')}}" style="display: inline-block; width: 200px !important;">
-                        <img src="{{ asset ('izzy/Whitelogo-nobg.png')}}" alt="" height="87" width="270" />
-                    </a>
+                    
                 </div>
                 <!-- Mobile Menu -->
                 <div id="mobile-sidebar " class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
