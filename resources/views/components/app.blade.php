@@ -24,7 +24,7 @@
         @media screen and (max-width: 1430px) and (min-width: 768px) {
             .book-now {
                 bottom: 10px;
-                left: 300px;
+                left: 25%;
             }
         }
 
