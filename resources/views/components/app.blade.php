@@ -31,7 +31,7 @@
         @media screen and (max-width: 768px) {
             .book-now {
                 bottom: 10px;
-                left: 150px;
+                left: 10%;
             }
         }
     </style>
